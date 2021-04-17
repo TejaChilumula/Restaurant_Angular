@@ -23,6 +23,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { DishService } from './services/dish.service';
 import { PromotionsService } from './services/promotions.service';
+import { LeadersService } from './services/leaders.service';
 
 
 import { from } from 'rxjs';
@@ -51,7 +52,7 @@ import { from } from 'rxjs';
     MatButtonModule,
     AppRoutingModule
   ],
-  providers: [DishService , PromotionsService],
+  providers: [DishService , PromotionsService,LeadersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
